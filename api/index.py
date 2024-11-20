@@ -1,7 +1,13 @@
 from flask import Flask, request, jsonify
 import requests
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+# CORS(app)  # Allows all origins
+CORS(app, resources={r"/api/*": {"origins": "https://test1-two-gilt.vercel.app"}})  # Restrict CORS to your frontend origin
+
+
 
 NYC_DATASET_URL = "https://data.cityofnewyork.us/resource/eabe-havv.json"
 # APP_TOKEN = "YOUR_APP_TOKEN_HERE"  # Optional:add API token for higher rate limits.
