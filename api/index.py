@@ -4,7 +4,7 @@ from flask_cors import CORS
 
 
 app = Flask(__name__)
-CORS(app)  # Allows all origins
+# CORS(app)  # Allows all origins
 # CORS(app, resources={r"/api/*": {"origins": "https://test1-two-gilt.vercel.app"}})  # Restrict CORS to your frontend origin
 
 
