@@ -3,7 +3,7 @@
 <h1 align="center">NYC PropertyIntel: Your Go-To Real Estate Insights Tool</h1>
 <h1 align="center">Backend-RESTful API</h1>
 <div align="center">
-<a href="https://api-new-murex.vercel.app/api/complaints">Use the RESTful API</a>
+<a href="https://api-new-murex.vercel.app/api/complaints?bin_number=1080796">Use the API</a>
 </div>
 
 This is the backend code for the web application that lets users explore and analyze building violations across New York City, it utilizes MVC software architecture and is built using real-time data from the NYC Department of Buildings (DOB), sourced from the [NYC Open Data](https://opendata.cityofnewyork.us/) platform.
