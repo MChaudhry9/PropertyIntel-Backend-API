@@ -4,7 +4,10 @@ from flask_cors import CORS
 
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "https://real-estate-complaints.vercel.app"}})
+# CORS(app, resources={r"/api/*": {"origins": "https://real-estate-complaints.vercel.app"}})
+#top one works only indeployment but not locally
+CORS(app, resources={r"/api/*": {"origins": ["https://real-estate-complaints.vercel.app", "http://localhost:3000"]}})
+
 
 # CORS(app)  # Allows all origins
 # CORS(app, resources={r"/api/*": {"origins": "https://test1-two-gilt.vercel.app"}})  # Restrict CORS to your frontend origin
